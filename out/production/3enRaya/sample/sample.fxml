@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane fx:id="tablero" layoutX="17.0" layoutY="15.0" prefHeight="519.0" prefWidth="518.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <TextArea fx:id="txMensaje" layoutX="545.0" layoutY="14.0" prefHeight="98.0" prefWidth="193.0" />
+      <ImageView fx:id="azul" fitHeight="84.0" fitWidth="87.0" layoutX="656.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/ficha1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="amarilla" fitHeight="84.0" fitWidth="105.0" layoutX="545.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/ficha2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btNuevoJuego" layoutX="545.0" layoutY="255.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="193.0" text="Nuevo juego" />
+   </children>
+</AnchorPane>
